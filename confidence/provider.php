@@ -20,7 +20,7 @@ enum Region: string
 {
     case EU = "https://resolver.eu.confidence.dev/v1";
     case US = "https://resolver.us.confidence.dev/v1";
-    case GLOBAL = "https://resolver.confidence.dev/v1"
+    case GLOBAL = "https://resolver.confidence.dev/v1";
 }
 
 class ResolveResult {
