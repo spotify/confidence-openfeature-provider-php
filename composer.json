@@ -1,0 +1,6 @@
+{
+    "require": {
+        "open-feature/sdk": "^2.0",
+        "curl/curl": "^2.5"
+    }
+}
