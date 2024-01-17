@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5497237568428697ec3592d322cf5b30",
+    "content-hash": "4716afd7f838735689c9be2a3e46551d",
     "packages": [
         {
             "name": "curl/curl",
@@ -129,16 +129,16 @@
         },
         {
             "name": "open-feature/sdk",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/open-feature/php-sdk.git",
-                "reference": "e6e4f08112573f80fcd623538d55bb01f8a9920e"
+                "reference": "a2de465332441b6511c6953cb12e6387be3db442"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/open-feature/php-sdk/zipball/e6e4f08112573f80fcd623538d55bb01f8a9920e",
-                "reference": "e6e4f08112573f80fcd623538d55bb01f8a9920e",
+                "url": "https://api.github.com/repos/open-feature/php-sdk/zipball/a2de465332441b6511c6953cb12e6387be3db442",
+                "reference": "a2de465332441b6511c6953cb12e6387be3db442",
                 "shasum": ""
             },
             "require": {
@@ -167,7 +167,7 @@
                 "ramsey/conventional-commits": "^1.3",
                 "roave/security-advisories": "dev-latest",
                 "spatie/phpunit-snapshot-assertions": "^4.2",
-                "vimeo/psalm": "~5.16.0"
+                "vimeo/psalm": "~5.17.0"
             },
             "type": "library",
             "extra": {
@@ -201,9 +201,9 @@
             ],
             "support": {
                 "issues": "https://github.com/open-feature/php-sdk/issues",
-                "source": "https://github.com/open-feature/php-sdk/tree/2.0.3"
+                "source": "https://github.com/open-feature/php-sdk/tree/2.0.4"
             },
-            "time": "2023-12-02T03:32:06+00:00"
+            "time": "2023-12-17T13:48:28+00:00"
         },
         {
             "name": "psr/log",

@@ -1,4 +1,7 @@
 {
+    "name": "confidence/openfeature_provider_php",
+    "description": "This is the Confidence OpenFeature Provider for PHP",
+    "license": "Apache-2.0",
     "require": {
         "open-feature/sdk": "^2.0",
         "curl/curl": "^2.5"
