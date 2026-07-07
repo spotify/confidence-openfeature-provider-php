@@ -1,4 +1,4 @@
-.PHONY: install build test lint clean
+.PHONY: install build test test-e2e lint clean
 
 install:
 	composer install
@@ -7,7 +7,10 @@ build:
 	@touch .build.stamp
 
 test:
-	vendor/bin/phpunit
+	vendor/bin/phpunit --testsuite default
+
+test-e2e:
+	vendor/bin/phpunit --testsuite e2e
 
 lint:
 	vendor/bin/php-cs-fixer fix --dry-run --diff
