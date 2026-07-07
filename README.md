@@ -61,7 +61,8 @@ $api->setProvider(new ConfidenceProvider($apiClient));
 // Create a client
 $client = $api->getClient('my-app');
 
-$context = new EvaluationContext('user-123', new Attributes([
+$context = new EvaluationContext(attributes: new Attributes([
+    'user_id' => 'user-123',
     'country' => 'SE',
     'plan' => 'premium',
 ]));
@@ -87,7 +88,8 @@ $apiClient = new ApiClient(
 The evaluation context contains information about the user/session being evaluated for targeting and A/B testing.
 
 ```php
-$context = new EvaluationContext('user-123', new Attributes([
+$context = new EvaluationContext(attributes: new Attributes([
+    'user_id' => 'user-123',
     'country' => 'US',
     'plan' => 'premium',
     'age' => 25,

@@ -25,7 +25,10 @@ $api->setProvider(new ConfidenceProvider($apiClient));
 $client = $api->getClient('quick-start-app');
 
 // Create evaluation context with user information
-$context = new EvaluationContext('user-123', new Attributes([]));
+$context = new EvaluationContext(attributes: new Attributes([
+    'user_id' => 'user-123',
+    'country' => 'SE',
+]));
 
 // Evaluate a boolean flag
 echo "Evaluating boolean flag...\n";
