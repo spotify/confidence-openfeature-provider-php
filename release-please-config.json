@@ -6,7 +6,7 @@
             "extra-files": [
                 "src/Version.php"
             ],
-            "initial-version": "0.1.0"
+            "initial-version": "0.0.1"
         }
     }
 }
