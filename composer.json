@@ -1,9 +1,25 @@
 {
-    "name": "confidence/openfeature_provider_php",
-    "description": "This is the Confidence OpenFeature Provider for PHP",
+    "name": "spotify/confidence-openfeature-provider",
+    "description": "Confidence OpenFeature provider for PHP",
     "license": "Apache-2.0",
+    "type": "library",
     "require": {
+        "php": ">=8.2",
         "open-feature/sdk": "^2.0",
-        "curl/curl": "^2.5"
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Confidence\\OpenFeature\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Confidence\\OpenFeature\\Tests\\": "tests/"
+        }
     }
 }
