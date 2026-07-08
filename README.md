@@ -6,7 +6,7 @@ Refer to the [Confidence documentation](https://confidence.spotify.com/docs) for
 
 This library supports the same platforms as the [OpenFeature PHP SDK](https://github.com/open-feature/php-sdk). Requires PHP >= 8.2.
 
-> **Note:** This provider uses the **online resolver** approach. Flag evaluations are resolved by making API calls to the Confidence backend for each evaluation request. This is different from the local resolver approach used in other Confidence providers (Java, JavaScript, Go) which use WebAssembly (WASM) for local flag evaluation.
+> **Note:** This provider uses the **online resolver** approach. Flag evaluations are resolved by making API calls to the Confidence backend for each evaluation request. This is different from the [local resolver](https://github.com/spotify/confidence-resolver/) approach used in other Confidence providers (Java, JavaScript, Go) which use WebAssembly (WASM) for local flag evaluation.
 
 ## Install
 
