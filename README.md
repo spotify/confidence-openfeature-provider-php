@@ -2,22 +2,13 @@
 
 This repo contains the OpenFeature PHP flag provider for [Confidence](https://confidence.spotify.com/).
 
-## Architecture
+Refer to the [Confidence documentation](https://confidence.spotify.com/docs) for more information. Before starting to use the provider, it can be helpful to read through the general [OpenFeature docs](https://docs.openfeature.dev/) and get familiar with the concepts.
 
-**Note:** This provider uses the **online resolver** approach. Flag evaluations are resolved by making API calls to the Confidence backend for each evaluation request. This is different from the local resolver approach used in other Confidence providers (Java, JavaScript, Go) which use WebAssembly (WASM) for local flag evaluation.
+This library supports the same platforms as the [OpenFeature PHP SDK](https://github.com/open-feature/php-sdk). Requires PHP >= 8.2.
 
-## OpenFeature
+> **Note:** This provider uses the **online resolver** approach. Flag evaluations are resolved by making API calls to the Confidence backend for each evaluation request. This is different from the [local resolver](https://github.com/spotify/confidence-resolver/) approach used in other Confidence providers (Java, JavaScript, Go) which use WebAssembly (WASM) for local flag evaluation.
 
-Before starting to use the provider, it can be helpful to read through the general [OpenFeature docs](https://docs.openfeature.dev/)
-and get familiar with the concepts.
-
-## Support Matrix
-
-This library supports the same platforms as the [OpenFeature PHP SDK](https://github.com/open-feature/php-sdk).
-
-Requires PHP >= 8.2.
-
-## Installation
+## Install
 
 Install the package via Composer:
 
@@ -25,7 +16,7 @@ Install the package via Composer:
 composer require spotify/confidence-openfeature-provider
 ```
 
-## Creating and Using the Flag Provider
+## Usage
 
 Below is an example for how to create an OpenFeature client using the Confidence flag provider, and then resolve a flag with a boolean attribute. The provider is configured with a **client secret** and a base URL, which will determine where it will send the resolving requests.
 
@@ -34,8 +25,6 @@ The flag will be applied immediately, meaning that Confidence will count the tar
 You can retrieve attributes on the flag variant using property dot notation, meaning `test-flag.boolean-key` will retrieve the attribute `boolean-key` on the flag `test-flag`.
 
 You can also use only the flag name `test-flag` and retrieve all values as an array with `resolveObjectValue()`.
-
-The flag's schema is validated against the requested data type, and if it doesn't match it will fall back to the default value.
 
 ```php
 <?php
