@@ -1,4 +1,5 @@
 /vendor/
+.env
 /.build.stamp
 /.phpunit.cache
 /.php-cs-fixer.cache

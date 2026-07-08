@@ -3,6 +3,16 @@
     "description": "Confidence OpenFeature provider for PHP",
     "license": "Apache-2.0",
     "type": "library",
+    "keywords": [
+        "confidence",
+        "openfeature",
+        "feature-flags"
+    ],
+    "homepage": "https://github.com/spotify/confidence-openfeature-provider-php",
+    "support": {
+        "issues": "https://github.com/spotify/confidence-openfeature-provider-php/issues",
+        "source": "https://github.com/spotify/confidence-openfeature-provider-php"
+    },
     "require": {
         "php": ">=8.2",
         "open-feature/sdk": "^2.0",
