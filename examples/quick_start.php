@@ -32,12 +32,12 @@ $context = new EvaluationContext(attributes: new Attributes([
 
 // Evaluate a boolean flag
 echo "Evaluating boolean flag...\n";
-$enabled = $client->getBooleanValue('test-flag.enabled', false, $context);
+$enabled = $client->getBooleanValue('my-flag.enabled', false, $context);
 echo "Feature enabled: " . ($enabled ? 'true' : 'false') . "\n";
 
 // Evaluate an object flag
 echo "\nEvaluating object flag...\n";
-$config = $client->getObjectValue('test-flag', [], $context);
+$config = $client->getObjectValue('my-flag', [], $context);
 echo "Config: " . json_encode($config) . "\n";
 
 echo "\nDone!\n";

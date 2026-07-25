@@ -39,9 +39,9 @@ Below is an example for how to create an OpenFeature client using the Confidence
 
 The flag will be applied immediately, meaning that Confidence will count the targeted user as having received the treatment.
 
-You can retrieve attributes on the flag variant using property dot notation, meaning `test-flag.boolean-key` will retrieve the attribute `boolean-key` on the flag `test-flag`.
+You can retrieve attributes on the flag variant using property dot notation, meaning `my-flag.boolean-key` will retrieve the attribute `boolean-key` on the flag `my-flag`.
 
-You can also use only the flag name `test-flag` and retrieve all values as an array with `resolveObjectValue()`.
+You can also use only the flag name `my-flag` and retrieve all values as an array with `resolveObjectValue()`.
 
 ```php
 <?php
@@ -73,7 +73,7 @@ $context = new EvaluationContext(attributes: new Attributes([
     'plan' => 'premium',
 ]));
 
-$flagValue = $client->getBooleanValue('test-flag.boolean-key', false, $context);
+$flagValue = $client->getBooleanValue('my-flag.boolean-key', false, $context);
 
 echo "Feature enabled: " . ($flagValue ? 'true' : 'false') . "\n";
 ```
@@ -113,7 +113,7 @@ The provider maps errors to standard OpenFeature error codes:
 - `GENERAL` - Network or API errors
 
 ```php
-$details = $client->getBooleanDetails('test-flag.enabled', false, $context);
+$details = $client->getBooleanDetails('my-flag.enabled', false, $context);
 
 if ($details->getError() !== null) {
     error_log(sprintf(
