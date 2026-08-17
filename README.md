@@ -10,25 +10,6 @@ This library supports the same platforms as the [OpenFeature PHP SDK](https://gi
 
 ## Install
 
-> **Note:** We are currently working on publishing this package to Packagist for a smoother installation experience. In the meantime, you need to add the GitHub repository to your `composer.json`.
-
-Add the repository to your `composer.json`:
-
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/spotify/confidence-openfeature-provider-php"
-        }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true
-}
-```
-
-Then install the package:
-
 ```sh
 composer require spotify/confidence-openfeature-provider
 ```
