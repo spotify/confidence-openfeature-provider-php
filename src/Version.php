@@ -6,5 +6,5 @@ namespace Confidence\OpenFeature;
 
 final class Version
 {
-    public const VERSION = '0.0.1'; // x-release-please-version
+    public const VERSION = '0.0.2'; // x-release-please-version
 }
